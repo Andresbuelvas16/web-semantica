@@ -1,11 +1,84 @@
+Andres felipe Buelvas Miranda
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>encabezado de pagina</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cabezote{
+            width: 100%;
+            height: 250px;
+            background-color: rgb(19, 65, 14);
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpchQVdSyJGiStQcT1-NLDnN5iOOK_c4QJ-gwzZ90V_0T3Z7pO6jzyRsXJXcZ7-3eVOyQ&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .titulo{
+            font-size: 80px;
+            color: white;
+            font-family: "Nerko Onecrossorigin", cursive;
+           font-weight: 400;
+           font-style: normal;
+        }
+        .logo{
+            width: 80px;
+            height: 80px;
+            padding-left: 20px;
+            border-radius: 50%;
+            padding-right: 20px;
+        }
 
-<body>
+        ul {
+            list-style-type: none; /* Elimina los puntos de lista predeterminados */
+            padding: 0; /* Elimina el espaciado interno del <ul> */
+            margin: 0; /* Elimina el margen externo del <ul> */
+            display: flex; /* Usa Flexbox para alinear los elementos en una fila */
+        }
+        li {
+            margin-right: 30px;
+            transition: background-color 0.6s, color 0.6s;
+            font-family: "Nerko One", cursive;
+            font-size: 20px;
+            cursor: pointer; /* Espacio entre los elementos de la lista */
+        }
+        li:hover {
+            background-color: #2eb014; /* Color de fondo cuando se pasa el cursor */
+            color: #fff; /* Color del texto cuando se pasa el cursor */
+        }
+
+        .navegacion{
+            background-color: #54eb36;
+            display: flex;
+            justify-content: right;
+        }
+
+        .degradado{
+        background: rgb(3,36,0);
+        background: linear-gradient(90deg, rgb(7, 7, 7) 0%, rgb(23, 49, 37) 28%, rgb(61, 107, 37) 75%, rgba(0,255,145,1) 100%);
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     
-</body>
+</head>
+<body>
+    <header class="cabezote">
+        <img class="logo" src="https://sibcolombia.net/wp-content/uploads/2016/05/Logo-uc.png">
+        <span class="titulo">UNIVERSIDAD DE CORDOBA</span>
+    </header>
+    <nav class="navegacion degradado">
+       <ul>
+        <li>INSTITUCIONAL</li>
+        <li>ACADEMIA</li>
+        <li>INVESTIGACION</li>
+       </ul>
+    </nav>
+   </body>
 </html>
