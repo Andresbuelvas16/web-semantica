@@ -1,84 +1,154 @@
-Andres felipe Buelvas Miranda
+Andres Felipe Buelvas Miranda
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .cabezote{
-            width: 100%;
-            height: 250px;
-            background-color: rgb(19, 65, 14);
-            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpchQVdSyJGiStQcT1-NLDnN5iOOK_c4QJ-gwzZ90V_0T3Z7pO6jzyRsXJXcZ7-3eVOyQ&usqp=CAU');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        .titulo{
-            font-size: 80px;
-            color: white;
-            font-family: "Nerko Onecrossorigin", cursive;
-           font-weight: 400;
-           font-style: normal;
-        }
-        .logo{
-            width: 80px;
-            height: 80px;
-            padding-left: 20px;
-            border-radius: 50%;
-            padding-right: 20px;
-        }
-
-        ul {
-            list-style-type: none; /* Elimina los puntos de lista predeterminados */
-            padding: 0; /* Elimina el espaciado interno del <ul> */
-            margin: 0; /* Elimina el margen externo del <ul> */
-            display: flex; /* Usa Flexbox para alinear los elementos en una fila */
-        }
-        li {
-            margin-right: 30px;
-            transition: background-color 0.6s, color 0.6s;
-            font-family: "Nerko One", cursive;
-            font-size: 20px;
-            cursor: pointer; /* Espacio entre los elementos de la lista */
-        }
-        li:hover {
-            background-color: #2eb014; /* Color de fondo cuando se pasa el cursor */
-            color: #fff; /* Color del texto cuando se pasa el cursor */
-        }
-
-        .navegacion{
-            background-color: #54eb36;
-            display: flex;
-            justify-content: right;
-        }
-
-        .degradado{
-        background: rgb(3,36,0);
-        background: linear-gradient(90deg, rgb(7, 7, 7) 0%, rgb(23, 49, 37) 28%, rgb(61, 107, 37) 75%, rgba(0,255,145,1) 100%);
-        }
-    </style>
+    <title>Universidad de Córdoba</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-image: url('https://anmdecolombia.org.co/wp-content/uploads/2020/07/universidad-de-cordoba-1080x675.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 5px solid #4ea005;
+        }
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+        }
+        .titulo {
+            font-size: 40px;
+            color: white;
+            flex-grow: 1;
+        }
+        nav {
+            background-color: #4ea005;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .nav-item {
+            color: white;
+            position: relative;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .nav-item:hover {
+            color: #cce5cc;
+        }
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            flex-direction: column;
+            width: 200px;
+            z-index: 10;
+        }
+        .dropdown a {
+            padding: 10px;
+            text-decoration: none;
+            color: #4ea005;
+            transition: background-color 0.3s;
+        }
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+        .nav-item:hover .dropdown {
+            display: flex;
+        }
+        .info-container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            justify-content: center;
+            align-items: center;     
+            margin: auto;
+        }
+    </style>
 </head>
-<body>
-    <header class="cabezote">
-        <img class="logo" src="https://sibcolombia.net/wp-content/uploads/2016/05/Logo-uc.png">
-        <span class="titulo">UNIVERSIDAD DE CORDOBA</span>
+<body> 
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Escudo_Universidad_de_C%C3%B3rdoba.png" alt="Logo Universidad de Córdoba" class="logo">
+        <span class="titulo">Universidad de Córdoba</span>
     </header>
-    <nav class="navegacion degradado">
-       <ul>
-        <li>INSTITUCIONAL</li>
-        <li>ACADEMIA</li>
-        <li>INVESTIGACION</li>
-       </ul>
+
+    <nav>
+        <div class="nav-item">
+            Institución
+            <div class="dropdown">
+                <a href="#">Visión General</a>
+                <a href="#">Misión</a>
+                <a href="#">Visión</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            Académico
+            <div class="dropdown">
+                <a href="#">Programas</a>
+                <a href="#">Cursos</a>
+                <a href="#">Facultades</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            Investigación
+            <div class="dropdown">
+                <a href="#">Proyectos</a>
+                <a href="#">Financiación</a>
+                <a href="#">Investigaciones</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            Extensión
+            <div class="dropdown">
+                <a href="#">Comunidad</a>
+                <a href="#">Alcance</a>
+                <a href="#">Talleres</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            Admisión
+            <div class="dropdown">
+                <a href="#">Aplicar</a>
+                <a href="#">Requisitos</a>
+                <a href="#">Fechas</a>
+            </div>
+        </div>
+        <div class="nav-item">
+            Internacional
+            <div class="dropdown">
+                <a href="#">Convenios</a>
+                <a href="#">Intercambio</a>
+                <a href="#">Programas</a>
+            </div>
+        </div>
     </nav>
-   </body>
+        <div class="info-container">
+            <h2>Valores Institucionales</h2>
+            <p>
+            Definir los valores que guían las acciones y decisiones de la universidad, como la integridad, la innovación, la equidad, la responsabilidad social, la sostenibilidad, la excelencia, y el respeto a la diversidad. Esto ayuda a comunicar qué principios son fundamentales para la comunidad universitaria.
+            </p>
+        </div>
+    </div>
+</body>
 </html>
