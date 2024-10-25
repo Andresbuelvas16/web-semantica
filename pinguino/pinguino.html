@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo de Pingüino</title>
+    <style>
+        body {
+            background-color: #87CEEB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .pinguino {
+            width: 200px;
+            height: 200px;
+            position: relative;
+        }
+
+        .cuerpo-pinguino {
+            background-color: white;
+            width: 120px;
+            height: 150px;
+            border-radius: 50% 50% 40% 40%;
+            position: absolute;
+            top: 30px;
+            left: 40px;
+            z-index: 1;
+        }
+
+        .cabeza-pinguino {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .cara-pinguino {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        .ojo-pinguino {
+            width: 15px;
+            height: 15px;
+            background-color: blue;
+            border-radius: 50%;
+            position: absolute;
+            top: 30px;
+        }
+
+        .ojo-pinguino.izquierdo {
+            left: 20px;
+        }
+
+        .ojo-pinguino.derecho {
+            right: 20px;
+        }
+
+        .pico-pinguino {
+            width: 20px;
+            height: 20px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            top: 50px;
+            left: 30px;
+        }
+
+        .pata-pinguino {
+            width: 30px;
+            height: 20px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .pata-pinguino.izquierda {
+            left: 25px;
+        }
+
+        .pata-pinguino.derecha {
+            right: 25px;
+        }
+
+        /* Alas */
+        .ala-pinguino {
+            background-color: black;
+            width: 40px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 40px;
+        }
+
+        .ala-pinguino.izquierda {
+            left: 0;
+            transform: rotate(-20deg);
+        }
+
+        .ala-pinguino.derecha {
+            right: 0;
+            transform: rotate(20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="pinguino">
+        <div class="cuerpo-pinguino"></div>
+        <div class="cabeza-pinguino">
+            <div class="cara-pinguino">
+                <div class="ojo-pinguino izquierdo"></div>
+                <div class="ojo-pinguino derecho"></div>
+                <div class="pico-pinguino"></div>
+            </div>
+        </div>
+        <div class="pata-pinguino izquierda"></div>
+        <div class="pata-pinguino derecha"></div>
+        <div class="ala-pinguino izquierda"></div>
+        <div class="ala-pinguino derecha"></div>
+    </div>
+</body>
+</html>
